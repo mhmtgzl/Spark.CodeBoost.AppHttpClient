@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>1.1.2</Version>
+		<PackageOutputPath>D:\MyProjects\SVA\SVA.ERP\Spark.Codeboost</PackageOutputPath>
+		<Description>HttpClient isteklerinde daha rahat ve esnek kullanım sağlar.</Description>
+
+		<!-- Geliştirici ve Şirket Bilgisi -->
+		<Authors>Mehmet Güzel</Authors>
+		<!-- Geliştirici adı -->
+		<Company></Company>
+		<!-- Şirket adı -->
+		<PackageIcon>assets/logo.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="assets\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>assets/logo.png</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.0-preview.1.25080.5" />
+		<PackageReference Include="Spark.CodeBoost.JsonSerializer" Version="1.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Spark.CodeBoost.JsonSerializer\Spark.CodeBoost.JsonSerializer.csproj" />
+	  <ProjectReference Include="..\Spark.CodeBoost.Result\Spark.CodeBoost.ServiceResult.csproj" />
+	</ItemGroup>
+</Project>
